@@ -29,6 +29,6 @@ make
 
 *   `examples/` – Содержит некоторые примеры программ на lox.
 *   `include/` – Содержит необходимые headers
-*   `include/` – Markdown files for the text of each chapter.
+*   `src/` – Содержит код
 
 
