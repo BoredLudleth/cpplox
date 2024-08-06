@@ -1,0 +1,34 @@
+class Human {
+    init(name, surname, age) {
+        this.name    = name;
+        this.surname = surname;
+        this.age     = age;
+    }
+
+    bio() {
+        print (this.name + " " + this.surname + " " + this.age);
+    }
+}
+
+class Pirate < Human {
+    init(name, surname, age, nickname, bounty) {
+        super.init(name, surname, age);
+        this.nickname = nickname;
+        this.bounty = bounty;
+    }
+
+    bio() {
+        print (this.name + " " + this.surname + " " + this.age + " " + this.nickname + " " + this.bounty);
+    }
+}
+
+print "==========class_human===========";
+var person = Human ("Bob", "Marley", "19");
+person.bio();
+person.age = "20";
+person.bio();
+
+print "";
+print "==========class_pirate===========";
+var pirate = Pirate ("Monkey", "D. Luffy", "16", "Straw Hat", "1.500.000.000 belly");
+pirate.bio();

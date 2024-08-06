@@ -1,0 +1,10 @@
+fun closure_exm(str) {
+    var greeting = "Hello, ";
+    fun hello_str (str) {
+        print greeting + str;
+    }
+
+    hello_str(str);
+}
+
+closure_exm("Nitro-mage");

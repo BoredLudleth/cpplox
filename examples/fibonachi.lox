@@ -1,0 +1,21 @@
+fun fib (a) {
+    if (a == 0) {
+        return 0;
+    }
+
+    if (a == 1) {
+        return 1;
+    }
+
+    return fib(a - 1) + fib(a - 2);
+}
+
+fun message(a) {
+    print "Fibonachi's ";
+    print a;
+    print " number is ";
+    print fib(a); 
+}
+
+var a = 8;
+message (a);
