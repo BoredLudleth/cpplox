@@ -4,6 +4,8 @@
 #include <string>
 
 namespace Lox {
+    extern bool hadError;
+
     void runFile(std::string path);
 
     void runPrompt();
